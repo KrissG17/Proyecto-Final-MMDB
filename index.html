@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- importacion de librerias y estilo -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Multimedia Databases Course | Pablo Bejarano</title>
+    <script src="src/models/DropArea.js"></script>
+    <script src="src/models/MultimediaElement.js"></script>
+    <script src="src/models/Image.js"></script>
+    <script src="src/models/Audio.js"></script>
+    <script src="src/models/Video.js"></script>
+    <script src="src/models/Pdf.js"></script>
+    <script src="src/models/Texto.js"></script>
+    <script src="./node_modules/chart.js/dist/Chart.js"></script>
+   <!-- <script src="./node_modules/highlight.js/dist"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script> 
+    <link rel="stylesheet" href="/path/to/styles/default.css">
+    <script src="/path/to/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    cargar highlights -->
+
+    <link rel="stylesheet" href="/path/to/styles/default.css">
+    <script src="/path/to/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+</head>
+<body>
+    <div id="app">
+        <div id="dropArea">
+                <div class="centeredTitle">
+                        Drop any multimedia file here
+                </div>
+        </div>
+        <div id="selectArea">
+            <div class="centeredTitle">
+                    <button onclick="select('img')">Mostrar imágenes de la DB</button>
+                    <button onclick="select('audio')">Mostrar Audios de la DB</button>
+                    <button onclick="select('video')">Mostrar Videos de la DB</button>
+                    <button onclick="select('pdf')">Mostrar PDF de la BD</button>
+                    <button onclick="select('text')">Mostrar Scripts y texto de la DB</button> 
+            </div>
+        </div>
+        <div id="LaOscuridad">
+                <div id="histogramArea">
+                    <canvas id="histogram"></canvas>
+                </div>
+        </div>
+    </div>
+    <script src="src/main.js"></script>
+</body>
+</html>
